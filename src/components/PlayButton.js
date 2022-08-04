@@ -1,16 +1,17 @@
-// import React from "react";
+import React from "react";
+import '../App.css'
 
 
-// const PlayButton = ({handleClick}) => {
+const PlayButton = ({onClick}) => {
 
-//     return(
-//         <>
-//            <input type="submit" value="Play" onClick={handleClick}/>
-//         </>  
-//     );
+    return(
+        <>
+           <input type="submit" value="Play" onClick={onClick} className="buttons"/>
+        </>  
+    );
 
 
 
-// }
+}
 
-// export default PlayButton;
+export default PlayButton;

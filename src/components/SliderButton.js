@@ -4,12 +4,21 @@ import Slider from '@mui/material/Slider';
 
 
 
-const SliderButton = ({CurrentNum, handleInput}) => {
+const SliderButton = ({onChange, value}) => {
 
 
     return (
       <Box width={300}>
-        <Slider defaultValue={178} aria-label="Default" valueLabelDisplay="auto" value={CurrentNum} onChange={handleInput} />
+        <Slider 
+            defaultValue={129} 
+            aria-label="Default" 
+            valueLabelDisplay="auto" 
+            min={40}
+            max={218} 
+            value={value} 
+            onChange={onChange} 
+            ClassName="Slider"
+        />
       </Box>
     )
 
